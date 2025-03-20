@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
 
     @IBOutlet weak var colorView: UIView!
     
@@ -49,7 +49,6 @@ class ViewController: UIViewController {
     }
     
     private func updateColorView() {
-        
         colorView.backgroundColor = UIColor(
             red: CGFloat(redSlider.value),
             green: CGFloat(greenSlider.value),
